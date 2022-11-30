@@ -38,16 +38,6 @@
         app:layout_constraintTop_toBottomOf="@+id/breakfastBtn" />
 
     <Button
-        android:id="@+id/dinnerBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="32dp"
-        android:text="晚餐"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lunchBtn" />
-
-    <Button
         android:id="@+id/nightSnackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,5 +45,5 @@
         android:layout_marginTop="32dp"
         android:text="消夜"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dinnerBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/lunchBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

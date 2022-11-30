@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         val breakfastBtn = findViewById<Button>(R.id.breakfastBtn)
         val lunchBtn = findViewById<Button>(R.id.lunchBtn)
-        val dinnerBtn = findViewById<Button>(R.id.dinnerBtn)
         val nightSnackBtn = findViewById<Button>(R.id.nightSnackBtn)
 
         breakfastBtn.setOnClickListener{
@@ -25,10 +24,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        dinnerBtn.setOnClickListener{
-            val intent = Intent(this, Dinner::class.java)
+        nightSnackBtn.setOnClickListener {
+            val intent = Intent(this, NightSnack::class.java)
             startActivity(intent)
         }
+
+
 
 
 

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lunch">
+    tools:context=".NightSnack">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="174dp"
         android:layout_height="31dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="104dp"
         android:text="你有多少錢"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -66,87 +66,35 @@
             android:text="500" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="145dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="16dp"
-        android:text="想吃什麼料理"
+    <Button
+        android:id="@+id/chooseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="44dp"
+        android:text="選出食物"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-    <Button
-        android:id="@+id/jpBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="276dp"
-        android:text="日式"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tv_result"
-        android:layout_width="202dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="52dp"
         android:text="結果"
         android:textColor="@color/black"
-        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jpBtn" />
-
-    <Button
-        android:id="@+id/twBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="212dp"
-        android:text="台式"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <Button
-        android:id="@+id/amBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="212dp"
-        android:text="英美式"
-        app:layout_constraintStart_toEndOf="@+id/twBtn"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/krBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="276dp"
-        android:text="韓式"
-        app:layout_constraintStart_toEndOf="@+id/jpBtn"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/chooseBtn" />
 
     <Button
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="60dp"
         android:text="查詢"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lunchImg" />
-
-    <ImageView
-        android:id="@+id/lunchImg"
-        android:layout_width="194dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_result"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
