@@ -22,9 +22,9 @@ class Breakfast : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_breakfast)
         foods.add(Food("蛋餅", 30, foodPicArray[0]))
-        foods.add(Food("三明治", 110,foodPicArray[3]))
-        foods.add(Food("漢堡", 200,foodPicArray[1]))
-        foods.add(Food("薯餅", 300,foodPicArray[2]))
+        foods.add(Food("三明治", 40,foodPicArray[3]))
+        foods.add(Food("漢堡", 80,foodPicArray[1]))
+        foods.add(Food("薯餅", 30,foodPicArray[2]))
 
         val chooseBtn = findViewById<Button>(R.id.chooseBtn)
         val result = findViewById<TextView>(R.id.tv_result)

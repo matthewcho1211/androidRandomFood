@@ -73,6 +73,7 @@
         android:layout_marginStart="132dp"
         android:layout_marginTop="16dp"
         android:text="想吃什麼料理"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -83,6 +84,7 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="276dp"
         android:text="日式"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -105,6 +107,7 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="212dp"
         android:text="台式"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,6 +119,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="212dp"
         android:text="英美式"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toEndOf="@+id/twBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -126,6 +130,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="276dp"
         android:text="韓式"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toEndOf="@+id/jpBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -136,6 +141,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="24dp"
         android:text="查詢"
+        android:backgroundTint="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lunchImg" />
 

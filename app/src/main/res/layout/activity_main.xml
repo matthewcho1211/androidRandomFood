@@ -14,6 +14,7 @@
         android:layout_marginTop="152dp"
         android:text="你今天要吃哪餐"
         android:textSize="20dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +25,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="32dp"
         android:text="早餐"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -34,6 +36,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="32dp"
         android:text="午餐"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/breakfastBtn" />
 
@@ -44,6 +47,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="32dp"
         android:text="消夜"
+        android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lunchBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

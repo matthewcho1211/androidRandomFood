@@ -20,7 +20,7 @@ class Lunch : AppCompatActivity() {
     private val amFoods = ArrayList<Food>()
     private val krFoods = ArrayList<Food>()
     val twFoodPicArray = arrayOf(R.drawable.mifen, R.drawable.pigbloodsoup, R.drawable.stinkytofu, R.drawable.beefnoodle,
-        R.drawable.goatsoup, R.drawable.nightsteak, R.drawable.drynoodle, R.drawable.dumpling, R.drawable.hotpot)
+        R.drawable.goatsoup, R.drawable.nightsteak, R.drawable.drynoodle, R.drawable.dumpling, R.drawable.hotpot,R.drawable.eggfriedrice)
     val jpFoodPicArray = arrayOf(R.drawable.jpsetmeal, R.drawable.sashimi, R.drawable.ramen, R.drawable.sukiyaki, R.drawable.trianglerice, R.drawable.rice)
     val amFoodPicArray = arrayOf(R.drawable.hamburgerpotato, R.drawable.italynoodle, R.drawable.pizza, R.drawable.oneplusone, R.drawable.michilin, R.drawable.halfchicken, R.drawable.fullchicken)
     val krFoodPicArray = arrayOf(R.drawable.koreanchicken, R.drawable.krhotpot, R.drawable.yearcake, R.drawable.krmeat)
@@ -33,11 +33,12 @@ class Lunch : AppCompatActivity() {
         twFoods.add(Food("豬血湯",60, twFoodPicArray[1]))
         twFoods.add(Food("臭豆腐",60, twFoodPicArray[2]))
         twFoods.add(Food("牛肉麵",150, twFoodPicArray[3]))
-        twFoods.add(Food("羊肉爐",80, twFoodPicArray[4]))
+        twFoods.add(Food("羊肉爐",550, twFoodPicArray[4]))
         twFoods.add(Food("夜市牛排",220, twFoodPicArray[5]))
         twFoods.add(Food("乾麵",80, twFoodPicArray[6]))
         twFoods.add(Food("水餃",80, twFoodPicArray[7]))
         twFoods.add(Food("火鍋",180, twFoodPicArray[8]))
+        twFoods.add(Food("炒飯", 80, twFoodPicArray[9]))
 
 
         jpFoods.add(Food("商業定食", 220, jpFoodPicArray[0]))
