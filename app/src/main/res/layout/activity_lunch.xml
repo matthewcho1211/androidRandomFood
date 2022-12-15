@@ -12,6 +12,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="116dp"
         android:layout_marginTop="52dp"
+        android:gravity="center"
         android:text="你有多少錢"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -72,6 +73,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="132dp"
         android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="想吃什麼料理"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,8 +94,9 @@
         android:id="@+id/tv_result"
         android:layout_width="202dp"
         android:layout_height="34dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="結果"
         android:textColor="@color/black"
         android:textSize="25dp"
@@ -116,10 +119,10 @@
         android:id="@+id/amBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="212dp"
-        android:text="英美式"
         android:backgroundTint="@color/yellow"
+        android:text="英美式"
         app:layout_constraintStart_toEndOf="@+id/twBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -127,10 +130,10 @@
         android:id="@+id/krBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="276dp"
-        android:text="韓式"
         android:backgroundTint="@color/yellow"
+        android:text="韓式"
         app:layout_constraintStart_toEndOf="@+id/jpBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -150,9 +153,22 @@
         android:layout_width="194dp"
         android:layout_height="126dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="正餐"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

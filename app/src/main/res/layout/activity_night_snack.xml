@@ -12,6 +12,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="104dp"
+        android:gravity="center"
         android:text="你有多少錢"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -70,10 +71,10 @@
         android:id="@+id/chooseBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="24dp"
-        android:text="選出消夜"
         android:backgroundTint="@color/yellow"
+        android:text="選出消夜"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -83,7 +84,9 @@
         android:layout_height="25dp"
         android:layout_marginStart="144dp"
         android:layout_marginTop="24dp"
+        android:gravity="center"
         android:text="結果"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chooseBtn" />
@@ -108,5 +111,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="消夜"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

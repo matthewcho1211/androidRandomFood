@@ -11,11 +11,12 @@
         android:id="@+id/textView2"
         android:layout_width="174dp"
         android:layout_height="31dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
         android:text="你有多少錢"
         android:textColor="@color/black"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,10 +72,10 @@
         android:id="@+id/chooseBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="44dp"
-        android:text="選出食物"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/yellow"
+        android:text="選出食物"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -83,7 +84,8 @@
         android:layout_width="123dp"
         android:layout_height="25dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
         android:text="結果"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -94,10 +96,10 @@
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="24dp"
-        android:text="查詢"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/blue"
+        android:text="查詢"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/breakfastImg" />
 
@@ -105,10 +107,23 @@
         android:id="@+id/breakfastImg"
         android:layout_width="182dp"
         android:layout_height="127dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="早餐"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
