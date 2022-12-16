@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAECE5"
     tools:context=".Lunch">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="174dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="88dp"
         android:gravity="center"
         android:text="你有多少錢"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,105 +37,114 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="100" />
+            android:text="100"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/twohundred"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="200" />
+            android:text="200"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/threehundred"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="300" />
+            android:text="300"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/fourhundred"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="400" />
+            android:text="400"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/fivehundred"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="500" />
+            android:text="500"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="145dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="132dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="想吃什麼料理"
+        android:text="想吃什麼料理?"
         android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-    <Button
-        android:id="@+id/jpBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="276dp"
-        android:text="日式"
-        android:backgroundTint="@color/yellow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="202dp"
-        android:layout_height="34dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="結果"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jpBtn" />
-
-    <Button
-        android:id="@+id/twBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="212dp"
-        android:text="台式"
-        android:backgroundTint="@color/yellow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/amBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="248dp"
         android:backgroundTint="@color/yellow"
         android:text="英美式"
+        android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/twBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="308dp"
+        android:backgroundTint="@color/yellow"
+        android:text="日式"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/krBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="308dp"
         android:backgroundTint="@color/yellow"
         android:text="韓式"
+        android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/jpBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/twBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="248dp"
+        android:backgroundTint="@color/yellow"
+        android:text="台式"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -142,9 +152,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="24dp"
-        android:text="查詢"
+        android:layout_marginTop="5dp"
         android:backgroundTint="@color/blue"
+        android:text="查詢"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lunchImg" />
 
@@ -153,7 +164,7 @@
         android:layout_width="194dp"
         android:layout_height="126dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result"
         tools:srcCompat="@tools:sample/avatars" />
@@ -162,12 +173,12 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="152dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="正餐"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
