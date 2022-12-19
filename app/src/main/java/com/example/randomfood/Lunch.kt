@@ -3,6 +3,7 @@ package com.example.randomfood
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -124,6 +125,8 @@ class Lunch : AppCompatActivity() {
                     }
                 }
                 val r = Random.nextInt(myFood.size)
+                val mediaplayer = MediaPlayer.create(this,R.raw.winning)
+                mediaplayer.start()
                 result.text = myFood.get(r).name
                 lunchImg.setBackgroundResource(myFood.get(r).picture)
             }
@@ -176,6 +179,8 @@ class Lunch : AppCompatActivity() {
                     }
                 }
                 val r = Random.nextInt(myFood.size)
+                val mediaplayer = MediaPlayer.create(this,R.raw.winning)
+                mediaplayer.start()
                 result.text = myFood.get(r).name
                 lunchImg.setBackgroundResource(myFood.get(r).picture)
             }
@@ -226,6 +231,8 @@ class Lunch : AppCompatActivity() {
                     }
                 }
                 val r = Random.nextInt(myFood.size)
+                val mediaplayer = MediaPlayer.create(this,R.raw.winning)
+                mediaplayer.start()
                 result.text = myFood.get(r).name
                 lunchImg.setBackgroundResource(myFood.get(r).picture)
             }
@@ -276,6 +283,8 @@ class Lunch : AppCompatActivity() {
                     }
                 }
                 val r = Random.nextInt(myFood.size)
+                val mediaplayer = MediaPlayer.create(this,R.raw.winning)
+                mediaplayer.start()
                 result.text = myFood.get(r).name
                 lunchImg.setBackgroundResource(myFood.get(r).picture)
             }
