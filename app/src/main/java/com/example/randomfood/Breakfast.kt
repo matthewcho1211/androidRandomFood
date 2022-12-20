@@ -3,6 +3,7 @@ package com.example.randomfood
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.media.MediaPlayer
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,6 +18,7 @@ import kotlin.random.Random
 
 class Breakfast : AppCompatActivity() {
     private val foods = ArrayList<Food>()
+
     val foodPicArray = arrayOf(R.drawable.eggcake, R.drawable.hamburger, R.drawable.potatocake, R.drawable.sandwich)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,6 +83,8 @@ class Breakfast : AppCompatActivity() {
                         myFood.add(item)
                     }
                 }
+                val mediaplayer = MediaPlayer.create(this,R.raw.winning)
+                mediaplayer.start()
                 val r = Random.nextInt(myFood.size)
                 result.text = myFood.get(r).name
                 breakfastImg.setBackgroundResource(myFood.get(r).picture)
