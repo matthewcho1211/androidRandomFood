@@ -22,6 +22,8 @@ class NightSnack : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_night_snack)
+
+
         foods.add(Food("鹹酥雞", 30, nightSnackPicArray[0]))
         foods.add(Food("泡麵", 30, nightSnackPicArray[1]))
         foods.add(Food("麥當勞", 30, nightSnackPicArray[2]))
@@ -35,7 +37,6 @@ class NightSnack : AppCompatActivity() {
         foods.add(Food("炸花枝", 60, nightSnackPicArray[10]))
 
 
-
         val chooseBtn = findViewById<Button>(R.id.chooseBtn)
         val result = findViewById<TextView>(R.id.tv_result)
         val onehundred = findViewById<RadioButton>(R.id.onehundred)
@@ -44,6 +45,10 @@ class NightSnack : AppCompatActivity() {
         val fourhundred = findViewById<RadioButton>(R.id.fourhundred)
         val fivehundred = findViewById<RadioButton>(R.id.fivehundred)
         val searchBtn = findViewById<Button>(R.id.searchBtn)
+
+        val mediaPlayer = MediaPlayer.create(this, R.raw.christmas)
+        mediaPlayer.start()
+        mediaPlayer.isLooping = true
 
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
 

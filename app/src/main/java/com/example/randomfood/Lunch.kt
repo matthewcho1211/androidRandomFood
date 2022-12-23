@@ -26,9 +26,12 @@ class Lunch : AppCompatActivity() {
     val amFoodPicArray = arrayOf(R.drawable.hamburgerpotato, R.drawable.italynoodle, R.drawable.pizza, R.drawable.oneplusone, R.drawable.michilin, R.drawable.halfchicken, R.drawable.fullchicken)
     val krFoodPicArray = arrayOf(R.drawable.koreanchicken, R.drawable.krhotpot, R.drawable.yearcake, R.drawable.krmeat)
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lunch)
+
 
         twFoods.add(Food("米粉",80, twFoodPicArray[0]))
         twFoods.add(Food("豬血湯",60, twFoodPicArray[1]))
@@ -50,7 +53,6 @@ class Lunch : AppCompatActivity() {
         jpFoods.add(Food("井飯", 180, jpFoodPicArray[5]))
 
 
-
         amFoods.add(Food("漢堡薯條", 180, amFoodPicArray[0]))
         amFoods.add(Food("義大利麵", 120, amFoodPicArray[1]))
         amFoods.add(Food("披薩", 220, amFoodPicArray[2]))
@@ -58,6 +60,7 @@ class Lunch : AppCompatActivity() {
         amFoods.add(Food("米其林餐廳料理", 500, amFoodPicArray[4]))
         amFoods.add(Food("烤半雞", 220, amFoodPicArray[5]))
         amFoods.add(Food("烤全雞", 500, amFoodPicArray[6]))
+
 
         krFoods.add(Food("韓式炸雞", 180, krFoodPicArray[0]))
         krFoods.add(Food("部隊鍋", 220, krFoodPicArray[1]))
@@ -78,6 +81,10 @@ class Lunch : AppCompatActivity() {
         val fivehundred = findViewById<RadioButton>(R.id.fivehundred)
         val searchBtn = findViewById<Button>(R.id.searchBtn)
         val lunchImg = findViewById<ImageView>(R.id.lunchImg)
+
+        val mediaPlayer = MediaPlayer.create(this, R.raw.christmas)
+        mediaPlayer.start()
+        mediaPlayer.isLooping = true
 
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
 

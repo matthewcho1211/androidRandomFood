@@ -38,6 +38,10 @@ class Breakfast : AppCompatActivity() {
         val searchBtn = findViewById<Button>(R.id.searchBtn)
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
 
+        val mediaPlayer = MediaPlayer.create(this, R.raw.christmas)
+        mediaPlayer.start()
+        mediaPlayer.isLooping = true
+
         val breakfastImg = findViewById<ImageView>(R.id.breakfastImg)
 
         chooseBtn.setOnClickListener{
@@ -110,7 +114,7 @@ class Breakfast : AppCompatActivity() {
 
     }
 
-    fun searchNet(words:String){
+    fun searchNet(words: String){
         try{
             val intent = Intent(Intent.ACTION_WEB_SEARCH)
             intent.putExtra(SearchManager.QUERY, words)
@@ -122,7 +126,7 @@ class Breakfast : AppCompatActivity() {
 
     }
 
-    fun searchNetCompat(words : String){
+    fun searchNetCompat(words: String){
         try {
             val uri = Uri.parse("http://www.google.com/#q="+words)
             val intent = Intent(Intent.ACTION_VIEW, uri)

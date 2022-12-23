@@ -1,6 +1,7 @@
 package com.example.randomfood
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,5 +17,10 @@ class StartPage : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        val mediaPlayer = MediaPlayer.create(this, R.raw.christmas)
+        mediaPlayer.start()
+        mediaPlayer.isLooping = true
+
     }
 }
