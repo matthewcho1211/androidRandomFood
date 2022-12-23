@@ -4,33 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAECE5"
+    android:background="#B99582"
     tools:context=".NightSnack">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="174dp"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="104dp"
-        android:gravity="center"
-        android:text="你有多少錢"
-        android:textColor="@color/black"
-        android:textSize="28sp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/snowback" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/howmuchmoney" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
 
         <RadioButton
             android:id="@+id/onehundred"
@@ -79,8 +86,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/yellow"
-        android:text="選出消夜"
+        android:backgroundTint="#304840"
+        android:text="選出宵夜"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -104,7 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="#993928"
         android:text="查詢"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginTop="16dp"
-        android:text="消夜"
+        android:text="宵夜"
         android:textColor="@color/black"
         android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"

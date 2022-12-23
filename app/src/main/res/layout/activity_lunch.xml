@@ -4,33 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAECE5"
+    android:background="#B99582"
     tools:context=".Lunch">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="174dp"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="88dp"
-        android:gravity="center"
-        android:text="你有多少錢"
-        android:textColor="@color/black"
-        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/snowback" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/howmuchmoney" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
         <RadioButton
             android:id="@+id/onehundred"
@@ -78,7 +84,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="想吃什麼料理?"
         android:textColor="@color/black"
@@ -105,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="248dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#304840"
         android:text="英美式"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/twBtn"
@@ -117,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="308dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#304840"
         android:text="日式"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="308dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#304840"
         android:text="韓式"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/jpBtn"
@@ -141,7 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="248dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#304840"
         android:text="台式"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,9 +156,9 @@
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="@color/blue"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#993928"
         android:text="查詢"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
