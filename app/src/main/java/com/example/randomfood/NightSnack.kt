@@ -44,7 +44,7 @@ class NightSnack : AppCompatActivity() {
         val fourhundred = findViewById<RadioButton>(R.id.fourhundred)
         val fivehundred = findViewById<RadioButton>(R.id.fivehundred)
         val searchBtn = findViewById<Button>(R.id.searchBtn)
-
+        val  backBtn=findViewById<Button>(R.id.backBtn)
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
 
         val nightSnackImg = findViewById<ImageView>(R.id.nightSnackImg)
@@ -102,6 +102,11 @@ class NightSnack : AppCompatActivity() {
 
 
         }
+        backBtn.setOnClickListener{
+            val intent = Intent(this, backBtn::class.java)
+            startActivity(intent)
+        }
+
 
         searchBtn.setOnClickListener{
             val searchTerms = result.text.toString()
