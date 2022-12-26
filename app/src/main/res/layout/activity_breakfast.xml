@@ -45,13 +45,27 @@
         android:id="@+id/searchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#993928"
         android:text="查詢"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/breakfastImg" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#993928"
+        android:text="返回"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastImg" />
+
+
 
     <ImageView
         android:id="@+id/breakfastImg"
