@@ -19,6 +19,7 @@ import kotlin.random.Random
 class Breakfast : AppCompatActivity() {
     private val foods = ArrayList<Food>()
 
+
     val foodPicArray = arrayOf(R.drawable.eggcake, R.drawable.hamburger, R.drawable.potatocake, R.drawable.sandwich)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +41,10 @@ class Breakfast : AppCompatActivity() {
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
 
         val breakfastImg = findViewById<ImageView>(R.id.breakfastImg)
+
+        //val BGMmediaplayer = MediaPlayer.create(this,R.raw.bgm)
+        //BGMmediaplayer.start()//
+        //BGMmediaplayer.isLooping = true//
 
         chooseBtn.setOnClickListener{
             if (radioGroup.getCheckedRadioButtonId() == -1)
@@ -115,6 +120,9 @@ class Breakfast : AppCompatActivity() {
 
 
     }
+
+
+
 
     fun searchNet(words:String){
         try{
