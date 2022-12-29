@@ -103,7 +103,7 @@ class NightSnack : AppCompatActivity() {
 
         }
         backBtn.setOnClickListener{
-            val intent = Intent(this, backBtn::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
